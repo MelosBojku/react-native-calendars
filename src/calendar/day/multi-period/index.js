@@ -70,6 +70,24 @@ class Day extends Component {
             marginRight: 4
           });
         }
+        if (period.mainDayStart) {
+          style.push({
+            borderTopLeftRadius: 5,
+            borderBottomLeftRadius: 5,
+            marginLeft: 4,
+            height: 20,
+            marginTop: -24,
+          });
+        }
+        if (period.mainDayEnd) {
+          style.push({
+            borderTopRightRadius: 5,
+            borderBottomRightRadius: 5,
+            // marginRight: 4,
+            height: 20,
+            marginTop: -24,
+          });
+        }
         return <View key={index} style={style}/>;
       });
     }
